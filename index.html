@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose the wellness plan that works for you.">
+  <title>AccessElite | Choose Your Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <section class="pricing-page">
+      <header class="hero">
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="brand" href="#" aria-label="AccessElite home">
+            <span class="brand-mark">✦</span>
+            <span>ACCESS<span class="brand-light">ELITE</span></span>
+          </a>
+
+          <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav-links">
+            <a href="#plans">Products</a>
+            <a href="#features">Doctor search</a>
+            <a href="#features">How it works</a>
+            <a href="#features">Corporate</a>
+          </div>
+
+          <div class="nav-actions">
+            <a href="#plans" class="location">⌖ &nbsp; Austin, TX</a>
+            <a href="#signup" class="login-link">♙ &nbsp; Log in</a>
+            <a href="#signup" class="nav-signup">Sign up</a>
+          </div>
+        </nav>
+
+        <div class="hero-copy">
+          <p class="eyebrow">A healthier you starts here</p>
+          <h1>Your Plan, Your Choice</h1>
+          <p>The best YOU is closer than you think. Find the<br class="desktop-break">
+            right plan for your health and wellness needs.</p>
+        </div>
+      </header>
+
+      <section class="plans" id="plans" aria-label="Pricing plans">
+        <article class="plan-card">
+          <p class="plan-type">Health</p>
+          <div class="plan-pill">Revive</div>
+          <div class="price"><span class="currency">$</span>99</div>
+          <p class="per-month">per month</p>
+          <p class="plan-description">Improve your healthcare<br> experience.</p>
+          <button class="signup-button" data-plan="Revive">Sign up</button>
+        </article>
+
+        <article class="plan-card featured">
+          <p class="plan-type">Wellness</p>
+          <div class="plan-pill">Rejuvenate</div>
+          <div class="price"><span class="currency">$</span>49</div>
+          <p class="per-month">per month</p>
+          <p class="plan-description">Exclusive access to wellness<br> professionals.</p>
+          <button class="signup-button" data-plan="Rejuvenate">Sign up</button>
+        </article>
+
+        <article class="plan-card">
+          <p class="plan-type">Combination</p>
+          <div class="plan-pill">Renew</div>
+          <div class="price"><span class="currency">$</span>129</div>
+          <p class="per-month">per month</p>
+          <p class="plan-description">Improve your total wellbeing with<br> the benefits of Revive and<br> Rejuvenate.</p>
+          <button class="signup-button" data-plan="Renew">Sign up</button>
+        </article>
+      </section>
+
+      <section class="features" id="features">
+        <div class="feature-heading">Includes</div>
+        <div class="feature-grid first-row">
+          <div class="feature-item">
+            Curated network of elite<br> wellness specialists
+          </div>
+          <div class="feature-item">
+            Curated network of elite<br> physical specialists
+          </div>
+          <div class="feature-item">
+            Curated network of elite<br> wellness specialists and<br> physical specialists
+          </div>
+        </div>
+        <div class="feature-grid second-row">
+          <div class="feature-item">Same-day and next-day<br> appointments</div>
+          <div class="feature-item">Same-day and next-day<br> appointments</div>
+          <div class="feature-item">Same-day and next-day<br> appointments</div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> AccessElite</span>
+        <span>Wellness that works for you.</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="modal" id="signup" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close signup form">&times;</button>
+      <p class="modal-kicker">Your next step</p>
+      <h2 id="modal-title">Get started with <span id="chosen-plan">Revive</span></h2>
+      <p class="modal-copy">Leave your details and we'll be in touch.</p>
+      <form id="signup-form">
+        <label for="full-name">Your name</label>
+        <input id="full-name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <button type="submit" class="form-submit">Continue</button>
+      </form>
+      <p class="form-message" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
